@@ -13,6 +13,9 @@ GameManager = {
 		Event.Subscribe("TrackCompleted", self, self.PlayerFinishCallback)
 		self.state = "startup"
 		self:CreateText("intro")
+		StartTime = Application.GetTime()
+		LastFrameStart = Application.GetTime()
+		FrameDelta = 1 / 60 -- assuming 60 fps initially
 	end,
 
 	CreateText = function(self, name)
@@ -21,6 +24,10 @@ GameManager = {
 	end,
 
 	OnUpdate = function(self)
+		local time = Application.GetTime()
+		FrameDelta = time - LastFrameStart
+		LastFrameStart = time
+
 		local delta = 0
 		if Input.GetKey("up") then
 			delta = delta + 0.01

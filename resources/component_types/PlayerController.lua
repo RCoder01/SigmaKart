@@ -21,7 +21,7 @@ PlayerController = {
         -- if Input.GetKeyDown("p") then
         --     Debug.Log(self.actor:GetComponent("Model").transform:tostring())
         -- end
-        local acc = self:GetInputAcceleration()
+        local acc = vec3.mul(self:GetInputAcceleration(), FrameDelta * 60)
 
         local old_yaw = math.atan(self.dir.z, self.dir.x)
         local new_yaw = old_yaw + acc.z
@@ -31,14 +31,14 @@ PlayerController = {
             similarity = 1
         end
         local new_speed = self.speed * similarity + acc.x
-        new_speed = new_speed * (1 - self.drag_coef)
+        new_speed = new_speed * (1 - (self.drag_coef * FrameDelta * 60))
         self.vel = vec3.mul(new_dir, new_speed)
         self.speed = new_speed
         self.dir = new_dir
 
         local model = self.actor:GetComponent("Model")
-        model.translation = vec3.add(model.translation, self.vel)
-        -- Debug.Log("Velocity: " .. self.vel.x .. ", " .. self.vel.y .. ", " .. self.vel.z)
+        local vel_tpf = vec3.mul(self.vel, FrameDelta * 60)
+        model.translation = vec3.add(model.translation, vel_tpf)
         if vec3.magnitude(self.dir) > 0.00001 then
             model.rotation_yaw = math.atan(self.dir.z, self.dir.x)
         end
