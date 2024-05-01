@@ -1,0 +1,12 @@
+{
+    "name": "pyramid",
+    "components": {
+        "1": {
+            "type": "Model",
+            "mesh": "pyramid.gltf",
+            "scale_x": 300,
+            "scale_y": 300,
+            "scale_z": 300
+        }
+    }
+}

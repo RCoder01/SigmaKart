@@ -1,0 +1,278 @@
+{
+	"actors": [
+		{
+			"name": "Manager",
+			"components": {
+				"1": {
+					"type": "GameManager"
+				},
+				"3": {
+					"type": "Follow",
+					"is_camera": true,
+					"target": "player",
+					"offset": {
+						"translation_x": -2,
+						"translation_y": 1,
+						"translation_z": 0,
+						"rotation_yaw": 0,
+						"rotation_pitch": -0.23,
+						"rotation_roll": 0
+					},
+					"ease_factor": 0.1,
+					"mode": "add",
+					"enabled": false
+				}
+			}
+		},
+		{
+			"name": "aspen",
+			"components": {
+				"1": {
+					"type": "Model",
+					"mesh": "aspen.gltf",
+					"enabled": false
+				}
+			}
+		},
+		{
+			"name": "Track segment 1",
+			"components": {
+				"1": {
+					"type": "TrackSegment",
+					"wall_perp": {
+						"x": 0,
+						"y": 0,
+						"z": 1
+					},
+					"wall_start": -1,
+					"wall_end": 3.5,
+					"path_start": -11.5,
+					"path_end": 0.86
+				}
+			}
+		},
+		{
+			"name": "Track segment 2",
+			"components": {
+				"1": {
+					"type": "TrackSegment",
+					"wall_perp": {
+						"x": -0.906307787,
+						"y": 0,
+						"z": 0.422618262
+					},
+					"wall_start": -2.45, 
+					"wall_end": 2.25,
+					"path_start": -2.79,
+					"path_end": 17.4
+				}
+			}
+		},
+		{
+			"name": "Track segment 3",
+			"components": {
+				"1": {
+					"type": "TrackSegment",
+					"wall_perp": {
+						"x": 0,
+						"y": 0,
+						"z": 1
+					},
+					"wall_start": -16.8,
+					"wall_end": -12.2,
+					"path_start": 5.1,
+					"path_end": 37.3
+				}
+			}
+		},
+		{
+			"name": "Track segment 4",
+			"components": {
+				"1": {
+					"type": "TrackSegment",
+					"wall_perp": {
+						"x": 0.819152044,
+						"y": 0,
+						"z": 0.573576436
+					},
+					"wall_start": -40.2,
+					"wall_end": -35.5,
+					"path_start": 7.6,
+					"path_end": 20.6
+				}
+			}
+		},
+		{
+			"name": "Track segment 5",
+			"components": {
+				"1": {
+					"type": "TrackSegment",
+					"wall_perp": {
+						"x": 1,
+						"y": 0,
+						"z": 0
+					},
+					"wall_start": -44.7,
+					"wall_end": -40.15,
+					"path_start": -6.3,
+					"path_end": 12.5
+				}
+			}
+		},
+		{
+			"name": "Track segment 6",
+			"components": {
+				"1": {
+					"type": "TrackSegment",
+					"wall_perp": {
+						"x": 0.5,
+						"y": 0,
+						"z": -0.866025403
+					},
+					"wall_start": -33.2,
+					"wall_end": -28.6,
+					"path_start": -32.46,
+					"path_end": -10.1
+				}
+			}
+		},
+		{
+			"name": "Track segment 7",
+			"components": {
+				"1": {
+					"type": "TrackSegment",
+					"wall_perp": {
+						"x": 0,
+						"y": 0,
+						"z": -1
+					},
+					"wall_start": -23.6,
+					"wall_end": -19,
+					"path_start": -25.5,
+					"path_end": 21
+				}
+			}
+		},
+		{
+			"name": "Track segment 8",
+			"components": {
+				"1": {
+					"type": "TrackSegment",
+					"wall_perp": {
+						"x": -0.342020143,
+						"y": 0,
+						"z": -0.939692620
+					},
+					"wall_start": -29.05,
+					"wall_end": -24.45,
+					"path_start": 10.86,
+					"path_end": 28
+				}
+			}
+		},
+		{
+			"name": "Track segment 9",
+			"components": {
+				"1": {
+					"type": "TrackSegment",
+					"wall_perp": {
+						"x": -0.819152044,
+						"y": 0,
+						"z": -0.573576436
+					},
+					"wall_start": -39.48,
+					"wall_end": -34.9,
+					"path_start": 5.71,
+					"path_end": 25
+				}
+			}
+		},
+		{
+			"name": "Track segment 10",
+			"components": {
+				"1": {
+					"type": "TrackSegment",
+					"wall_perp": {
+						"x": -0.965925826,
+						"y": 0,
+						"z": 0.2588190451
+					},
+					"wall_start": -43.85,
+					"wall_end": -39.27,
+					"path_start": -15,
+					"path_end": 3.1
+				}
+			}
+		},
+		{
+			"name": "Track segment 11",
+			"components": {
+				"1": {
+					"type": "TrackSegment",
+					"wall_perp": {
+						"x": 0,
+						"y": 0,
+						"z": 1
+					},
+					"wall_start": -14.35,
+					"wall_end": -9.8,
+					"path_start": -41.53,
+					"path_end": -14.92
+				}
+			}
+		},
+		{
+			"name": "Track segment 11",
+			"components": {
+				"1": {
+					"type": "TrackSegment",
+					"wall_perp": {
+						"x": 0.906307787,
+						"y": 0,
+						"z": 0.422618261
+					},
+					"wall_start": 7.46,
+					"wall_end": 11.9,
+					"path_start": -19.28,
+					"path_end": -1.64
+				}
+			}
+		},
+		{
+			"name": "Scene",
+			"components": {
+				"1": {
+					"type": "Model",
+					"mesh": "racing_mountain5.gltf",
+					"translation_y": -15,
+					"scale_x": 0.5,
+					"scale_y": 0.5,
+					"scale_z": 0.5
+				}
+			}
+		},
+		{
+			"name": "Skybox",
+			"components": {
+				"1": {
+					"type": "Model",
+					"mesh": "skybox.gltf",
+					"scale_x": 100,
+					"scale_y": 100,
+					"scale_z": 100
+				}
+			}
+		},
+		{
+			"name": "Spawner",
+			"components": {
+				"1": {
+					"type": "ConeSpawner"
+				},
+				"2": {
+					"type": "TreeSpawner"
+				}
+			}
+		}
+	]
+}

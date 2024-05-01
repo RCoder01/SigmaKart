@@ -1,0 +1,9 @@
+{
+    "name": "text",
+    "components": {
+        "1": {
+            "type": "Model",
+            "mesh": "player1.gltf"
+        }
+    }
+}

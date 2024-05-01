@@ -1,0 +1,13 @@
+{
+    "name": "mariokart2",
+    "components": {
+        "1": {
+            "type": "Model",
+            "mesh": "mariokart2/mariokart2.gltf",
+            "scale_x": 0.5,
+            "scale_y": 0.5,
+            "scale_z": 0.5,
+            "rotation_yaw": 1.57079
+        }
+    }
+}

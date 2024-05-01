@@ -1,0 +1,16 @@
+{
+    "name": "cone",
+    "components": {
+        "1": {
+            "type": "Model",
+            "mesh": "cone.gltf",
+            "scale_x": 0.05,
+            "scale_y": 0.05,
+            "scale_z": 0.05
+        },
+        "2": {
+            "type": "StaticPhysics",
+            "radius": 0.1
+        }
+    }
+}

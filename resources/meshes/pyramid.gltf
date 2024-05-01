@@ -1,0 +1,99 @@
+{
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 256,
+            "max": [
+                0.00047905901074409485,
+                0.0004344969987869263,
+                0.00047905901074409485
+            ],
+            "min": [
+                -0.00047905901074409485,
+                -0.00030000001192092895,
+                -0.00047905901074409485
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 256,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 372,
+            "type": "SCALAR"
+        }
+    ],
+    "asset": {
+        "generator": "Open CASCADE Technology 7.6 [dev.opencascade.org]",
+        "version": "2.0",
+        "extras": {
+            "Comments": "Model for https://eliemichel.github.io/LearnWebGPU"
+        }
+    },
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 3072,
+            "byteOffset": 0,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3072,
+            "byteOffset": 3072,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 744,
+            "byteOffset": 6144,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 6888,
+            "uri": "pyramid.bin"
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Plane",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 1,
+                        "POSITION": 0
+                    },
+                    "indices": 2,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "Plane"
+        }
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ]
+}

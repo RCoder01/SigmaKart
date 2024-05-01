@@ -1,0 +1,12 @@
+{
+    "name": "RectFollow",
+    "components": {
+        "1": {
+            "type": "Model",
+            "mesh": "aspen.gltf"
+        },
+        "2": {
+            "type": "Follow"
+        }
+    }
+}

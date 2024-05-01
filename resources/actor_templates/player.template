@@ -1,0 +1,36 @@
+{
+    "name": "player",
+    "components": {
+        "1": {
+            "type": "Model",
+            "mesh": "kart2/kart2.gltf",
+            "translation_x": 0,
+            "translation_y": -0.36,
+            "translation_z": 21,
+            "scale_x": 0.5,
+            "scale_y": 0.5,
+            "scale_z": 0.5,
+            "rotation_yaw": 6.283185307
+        },
+        "2": {
+            "type": "KeyboardControls",
+            "enabled": false
+        },
+        "3": {
+            "type": "SegmentTracker"
+        },
+        "4": {
+            "type": "PlayerController",
+            "radius": 0.5,
+            "linear_acceleration": 0.01,
+            "angular_acceleration": 0.03,
+            "drag_coef": 0.08,
+            "enabled": true
+        },
+        "5": {
+            "type": "ObjectSpawner",
+            "object": "cone",
+            "enabled": false
+        }
+    }
+}

@@ -1,0 +1,162 @@
+{
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 773,
+            "max": [
+                80.3978359375,
+                463.10321875,
+                79.7987578125
+            ],
+            "min": [
+                -77.9708671875,
+                0.0,
+                -78.6960234375
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 773,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 773,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 2817,
+            "type": "SCALAR"
+        }
+    ],
+    "asset": {
+        "generator": "Open CASCADE Technology 7.6 [dev.opencascade.org]",
+        "version": "2.0",
+        "extras": {
+            "Originating system": "Sketchfab-12.65.0"
+        }
+    },
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 9276,
+            "byteOffset": 0,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 9276,
+            "byteOffset": 9276,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 6184,
+            "byteOffset": 18552,
+            "byteStride": 8,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5636,
+            "byteOffset": 24736,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 30372,
+            "uri": "stylized_pine_tree_tree.bin"
+        }
+    ],
+    "images": [
+        {
+            "uri": "stylized_pine_tree_tree_textures/0.png"
+        }
+    ],
+    "materials": [
+        {
+            "name": "mat_0",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 1.0,
+                "roughnessFactor": 1.0
+            },
+            "doubleSided": true
+        }
+    ],
+    "meshes": [
+        {
+            "name": "tree_low.001_StylizedTree_0",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 1,
+                        "POSITION": 0,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "rotation": [
+                1.1102230246251566e-16,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "mesh": 0,
+            "name": "Sketchfab_model"
+        }
+    ],
+    "samplers": [
+        {}
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        }
+    ]
+}

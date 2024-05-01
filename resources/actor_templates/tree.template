@@ -1,0 +1,12 @@
+{
+    "name": "tree",
+    "components": {
+        "1": {
+            "type": "Model",
+            "mesh": "stylized_pine_tree_tree.gltf",
+            "scale_x": 0.01,
+            "scale_y": 0.01,
+            "scale_z": 0.01
+        }
+    }
+}
