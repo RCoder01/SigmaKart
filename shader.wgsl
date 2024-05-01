@@ -58,16 +58,15 @@ fn vertex_main(in: VertexInput, @builtin(instance_index) instance_index: u32) ->
 
 @fragment
 fn fragment_main(in: VertexOutput) -> @location(0) vec4f {
-	// let color = in.normal * 0.5 + 0.5;
 	if (primitiveUniforms.has_texture == 0) {
 		return vec4f(pow(primitiveUniforms.color.xyz, vec3f(2.2)), primitiveUniforms.color.a);
 	}
-	// let texcoord = vec2i(in.position.xy);
-	// let texcoord = in.uv * vec2f(textureDimensions(colorTexture));
 	let color = textureSample(colorTexture, colorSampler, in.uv).rgb;
-	// let color = in.normal * uniforms.color.rgb;
+
 	// Gamma-correction
-	// let corrected_color = pow(color, vec3f(2.2));
-	let corrected_color = color;
+	var corrected_color = color;
+	if (DO_COLOR_CORRECTION) {
+		corrected_color = pow(color, vec3f(2.2));
+	}
 	return vec4f(corrected_color, primitiveUniforms.color.a);
 }

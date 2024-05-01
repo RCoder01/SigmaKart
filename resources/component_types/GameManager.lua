@@ -74,6 +74,11 @@ GameManager = {
 			self.state = "credits"
 		end
 
+		if Input.GetKeyDown("o") and self.state == "credits" then
+			Application.OpenURL("https://skfb.ly/6wT8x")
+			Application.OpenURL("https://skfb.ly/oo89z")
+		end
+
 		if not follow.enabled then
 			Camera.transform = self.default_pos
 		end
