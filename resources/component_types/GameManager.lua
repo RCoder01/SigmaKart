@@ -41,6 +41,11 @@ GameManager = {
 				self.state = "player1"
 				self.player_1_start = Application.GetFrame()
 			end
+			if self.state == "credits" then
+				Actor.Destroy(Actor.Find("text"))
+				self:CreateText("intro")
+				self.state = "startup"
+			end
 			if self.state == "halfway" then
 				Actor.Destroy(Actor.Find("text"))
 				Actor.Instantiate("player")
@@ -54,6 +59,12 @@ GameManager = {
 				self:CreateText("intro")
 				self.state = "startup"
 			end
+		end
+
+		if Input.GetKeyDown("c") and self.state == "startup" then
+			Actor.Destroy(Actor.Find("text"))
+			self:CreateText("credits")
+			self.state = "credits"
 		end
 
 		if not follow.enabled then

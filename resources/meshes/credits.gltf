@@ -62,8 +62,8 @@
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"Player 2 wins",
-			"uri":"Player%202%20wins.png"
+			"name":"credits",
+			"uri":"credits.png"
 		}
 	],
 	"accessors":[

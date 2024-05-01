@@ -15,6 +15,10 @@ SegmentTracker = {
 
     OnStart = function(self)
         self.segments = {}
+        if TrackSegments == nil then
+            Debug.Log("TrackSegments not found")
+            TrackSegments = {}
+        end
         for id, segment in pairs(TrackSegments) do
             self.segments[id] = false
         end
